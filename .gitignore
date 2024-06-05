@@ -1,52 +1,20 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+void main()
+{
+    int num1, num2;
+    printf("ingrese dos numeros enteros\n");
+    scanf("%i\n", &num1);
+    scanf("%i", &num2);
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    if (num1 > num2)
+        {
+            printf("el numero mayor es %i", num1);
+        }
+    else
+        {
+            printf("el numero mayor es %i\n", num2);
+        }
+    system("pause");
+}
